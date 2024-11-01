@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <!-- FrameLayout для заголовка -->
+        <FrameLayout
+            android:id="@+id/user"
+            android:layout_width="0dp"
+            android:layout_height="98dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/CardView1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!-- Текстовое поле (название приложения) -->
+            <TextView
+                android:id="@+id/name_app"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|start"
+                android:layout_marginStart="16dp"
+                android:text="@string/name_app"
+                android:textColor="#282727"
+                android:textSize="50sp" />
+
+            <!-- Аватар -->
+            <ImageView
+                android:id="@+id/avatar_image_view"
+                android:layout_width="67dp"
+                android:layout_height="67dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/user_icon"
+                android:clickable="true"
+                android:contentDescription="@string/avatar_image_description"
+                android:focusable="true"
+                android:scaleType="centerCrop"
+                android:onClick="onAvatarClick"/>
+        </FrameLayout>
+
+        <!-- Первый курс -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CardView1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="25dp"
+            android:background="#2E2E2E"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/CardView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/user"
+            app:layout_constraintVertical_bias="0.53">
+
+            <LinearLayout
+                android:id="@+id/course1"
+                android:layout_width="match_parent"
+                android:layout_height="146dp"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageOOP"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:contentDescription="@string/description_image"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/oop" />
+
+                <TextView
+                    android:id="@+id/textOOP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/course_one" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Второй курс -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CardView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="25dp"
+            android:background="#2E2E2E"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/CardView3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CardView1">
+
+            <LinearLayout
+                android:id="@+id/course2"
+                android:layout_width="match_parent"
+                android:layout_height="146dp"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageFunc"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:contentDescription="@string/description_image"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/func" />
+
+                <TextView
+                    android:id="@+id/textFunc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/course_two" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Третий курс -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CardView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="#2E2E2E"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/CardView4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CardView2">
+
+            <LinearLayout
+                android:id="@+id/course3"
+                android:layout_width="match_parent"
+                android:layout_height="146dp"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageKotlin"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:contentDescription="@string/description_image"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/for_course" />
+
+                <TextView
+                    android:id="@+id/textKotlin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/course_three" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Четвертый курс -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CardView4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="#2E2E2E"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/CardView5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CardView3">
+
+            <LinearLayout
+                android:id="@+id/course4"
+                android:layout_width="match_parent"
+                android:layout_height="146dp"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageJava"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:contentDescription="@string/description_image"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/data_type_course" />
+
+                <TextView
+                    android:id="@+id/textJava"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/course_four" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Пятый курс -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CardView5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="#2E2E2E"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CardView4">
+
+            <LinearLayout
+                android:id="@+id/course5"
+                android:layout_width="match_parent"
+                android:layout_height="146dp"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imagePython"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:contentDescription="@string/description_image"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/python_course" />
+
+                <TextView
+                    android:id="@+id/textPython"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/course_five" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "966304720417",
+    "project_id": "jajacourse",
+    "storage_bucket": "jajacourse.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:966304720417:android:9adc19e8f352d3ee5c2560",
+        "android_client_info": {
+          "package_name": "com.example.jaja_course"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCM-1ICHQ77iRCBPOucPX87aJ5aEQy5x_k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Jaja_Course</string>
+    <string name="name_app">JAJA</string>
+    <string name="avatar_image_description">Изображение аватара пользователя</string>
+    <string name="description_image">Изображение курса</string>
+    <string name="course_one">Объектно-ориентированное программирование</string>
+    <string name="course_two">Функции</string>
+    <string name="course_three">Циклы, условия</string>
+    <string name="course_four">Переменные и тип данных</string>
+    <string name="course_five">Тест</string>
+
+</resources>
+
