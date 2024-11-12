@@ -8,6 +8,43 @@
     <string name="course_three">Циклы, условия</string>
     <string name="course_four">Переменные и тип данных</string>
     <string name="course_five">Тест</string>
-
+    <string name="course_image_description">Изображение курса</string>
+    <string name="username_hint">Имя пользователя</string>
+    <string name="password_hint">Пароль</string>
+    <string name="login_button_text">Войти</string>
+    <string name="profile_image_description">Изображение профиля</string>
+    <string name="user_name">Имя пользователя</string>
+    <string name="edit_name_button_text">Изменить имя</string>
+    <string name="save_button_text">Сохранить</string>
+    <string name="logout_button_text">Выйти</string>
+    <string name="course_image_oop_description">Изображение курса ООП</string>
+    <string name="course_title_oop">Объектно-ориентированное программирование</string>
+    <string name="course_description_oop">Этот курс расскажет о принципах объектно-ориентированного программирования (ООП). Вы узнаете про классы, объекты, инкапсуляцию, наследование и полиморфизм.</string>
+    <string name="course_content_oop">ООП включает в себя несколько основных концепций: инкапсуляция, наследование, полиморфизм и абстракция. Каждая из этих концепций позволяет разработчикам писать более структурированный и поддерживаемый код. Например, инкапсуляция помогает скрыть внутренние детали реализации, а наследование позволяет создавать новые классы на основе существующих.</string>
+    <string name="course_additional_info_oop">Основные принципы ООП:\n\n1. Инкапсуляция: Скрытие внутренней реализации и предоставление доступа только к необходимым методам и свойствам.\n2. Наследование: Позволяет одному классу унаследовать свойства и методы другого.\n3. Полиморфизм: Возможность классов иметь различные реализации методов с одинаковым именем.\n\nЭти принципы помогают лучше организовывать код и делать его переиспользуемым и более понятным.</string>
+    <string name="course_code_example_title">Пример кода ООП на Kotlin:</string>
+    <string name="course_code_example">\nclass Animal {\n    var name: String = \"\"\n    fun makeSound() {\n        println(\"Animal sound\")\n    }\n}\n\nclass Dog : Animal() {\n    fun bark() {\n        println(\"Woof!\")\n    }\n}\n\nfun main() {\n    val myDog = Dog()\n    myDog.name = \"Buddy\"\n    myDog.makeSound()  // Output: Animal sound\n    myDog.bark()       // Output: Woof!\n}</string>
+    <string name="course_image_functions_description">Изображение курса функций</string>
+    <string name="course_title_functions">Функции</string>
+    <string name="course_description_functions">Этот курс посвящён изучению функций, их созданию и использованию. Вы узнаете, как функции помогают структурировать код, избегать дублирования и делать программу более читаемой.</string>
+    <string name="course_content_functions">Функции позволяют выделять повторяющиеся действия в программе, упрощая тем самым её чтение и поддержку. Вы научитесь создавать функции с параметрами, возвращаемыми значениями и обрабатывать рекурсивные вызовы.</string>
+    <string name="course_additional_info_functions">Основные преимущества функций:\n\n1. Переиспользование кода: Один и тот же код можно вызывать несколько раз без необходимости его копировать.\n2. Легкость тестирования: Отдельные функции проще тестировать по сравнению с монолитным кодом.\n3. Повышение читаемости: Код становится более структурированным и легким для понимания.\n\nФункции позволяют выделить отдельные логические блоки и улучшить читаемость и удобство поддержки кода.</string>
+    <string name="course_code_example_title_functions">Пример кода функции на Kotlin:</string>
+    <string name="course_code_example_functions">\nfun greetUser(name: String) {\n    println(\"Привет, $name!\")\n}\n\nfun main() {\n    greetUser(\"Андрей\")  // Output: Привет, Андрей!\n    greetUser(\"Мария\")   // Output: Привет, Мария!\n}</string>
+    <string name="course_image_loops_description">Изображение курса по циклам</string>
+    <string name="course_title_loops">Циклы</string>
+    <string name="course_description_loops">Этот курс посвящён изучению циклов, их созданию и использованию. Вы узнаете, как циклы помогают автоматизировать повторяющиеся действия в программе, упрощая разработку и улучшая читаемость кода.</string>
+    <string name="course_content_loops">Циклы позволяют повторять выполнение одного и того же блока кода до тех пор, пока выполняется заданное условие. Вы научитесь работать с различными типами циклов, такими как for, while и do-while, и понимать, как управлять их выполнением.</string>
+    <string name="course_additional_info_loops">Основные типы циклов:\n\n1. Цикл for: Используется, когда известно количество итераций.\n2. Цикл while: Выполняется, пока условие истинно.\n3. Цикл do-while: Выполняется хотя бы один раз, затем проверяет условие.\n\nЦиклы позволяют эффективно автоматизировать повторяющиеся задачи, делая код более чистым и кратким.</string>
+    <string name="course_code_example_title_loops">Пример кода циклов на Kotlin:</string>
+    <string name="course_code_example_loops">\nfun main() {\n    // Пример цикла for\n    for (i in 1..5) {\n        println(\"Итерация: $i\")\n    }\n\n    // Пример цикла while\n    var count = 1\n    while (count &lt;= 5) {\n        println(\"Count: $count\")\n        count++\n    }\n\n    // Пример цикла do-while\n    var number = 1\n    do {\n        println(\"Number: $number\")\n        number++\n    } while (number &lt;= 5)\n}</string>
+    <string name="course_image_variables_description">Изображение курса переменных и типов данных</string>
+    <string name="course_title_variables">Переменные и тип данных</string>
+    <string name="course_description_variables">Этот курс охватывает переменные и типы данных в программировании. Вы узнаете, как объявлять переменные и присваивать им значения, а также как работать с разными типами данных, такими как числа, строки и булевы значения.</string>
+    <string name="course_content_variables">Переменные - это контейнеры для хранения данных. Тип данных определяет, какие значения может принимать переменная и какие операции с ней можно выполнять. Важно правильно выбирать тип данных, чтобы программа работала эффективно и без ошибок.</string>
+    <string name="course_additional_info_variables">Основные типы данных в Kotlin:\n\n1. Int: целые числа, например, 42.\n2. Double: числа с плавающей точкой, например, 3.14.\n3. String: строки символов, например, \"Привет, мир!\".\n4. Boolean: логические значения, true или false.\n\nПеременные могут быть изменяемыми (var) или неизменяемыми (val). Использование правильного типа данных и подходящего типа переменной (var/val) важно для обеспечения надежности и ясности кода.</string>
+    <string name="course_code_example_title_variables">Пример кода переменных на Kotlin:</string>
+    <string name="course_code_example_variables">\nfun main() {\n    val name: String = \"Андрей\"  // неизменяемая переменная\n    var age: Int = 25  // изменяемая переменная\n    println(\"Имя: $name\")\n    println(\"Возраст: $age\")\n\n    age = 26  // изменение значения переменной\n    println(\"Новый возраст: $age\")\n}</string>
 </resources>
+
 

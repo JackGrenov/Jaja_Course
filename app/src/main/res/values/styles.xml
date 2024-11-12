@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Определение темы приложения -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Цвет основной темы -->
+        <item name="colorPrimary">#FFFFFF</item>
+        <item name="colorPrimaryDark">#FFFFFF</item>
+        <item name="colorAccent">#282727</item>
+        <!-- Прозрачное окно статуса -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+</resources>

@@ -41,4 +41,29 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
+
+    // Метод для перехода к курсу ООП
+    fun openCourseOOP(view: View) {
+        val intent = Intent(this, CourseOOPActivity::class.java)
+        startActivity(intent)
+    }
+
+    // Метод для перехода к курсу по функциям
+    fun openCourseFunctions(view: View) {
+        val intent = Intent(this, CourseFunctionsActivity::class.java)
+        startActivity(intent)
+    }
+
+    // Метод для перехода к курсу по циклам
+    fun openCourseLoops(view: View) {
+        val intent = Intent(this, CourseLoopsActivity::class.java)
+        startActivity(intent)
+    }
+
+    // Метод для перехода к курсу по переменным и типам данных
+    fun openCourseVariables(view: View) {
+        val intent = Intent(this, ActivityCourseVariables::class.java)
+        startActivity(intent)
+    }
+
 }

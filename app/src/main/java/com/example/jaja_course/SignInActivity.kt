@@ -24,17 +24,17 @@ class SignInActivity : AppCompatActivity() {
         val passwordEditText: EditText = findViewById(R.id.password_edit_text)
 
         loginButton.setOnClickListener {
-            val email = emailEditText.text.toString()
-            val password = passwordEditText.text.toString()
+            val email = emailEditText.text.toString().trim()
+            val password = passwordEditText.text.toString().trim()
 
             if (email.isNotEmpty() && password.isNotEmpty()) {
                 auth.signInWithEmailAndPassword(email, password)
                     .addOnCompleteListener(this) { task ->
                         if (task.isSuccessful) {
-                            // Авторизация успешна, переходим в профиль
                             Toast.makeText(this, "Успешная авторизация", Toast.LENGTH_SHORT).show()
-                            val intent = Intent(this, UserProfileActivity::class.java)
+                            val intent = Intent(this, MainActivity::class.java)
                             startActivity(intent)
+                            finish() // Закрыть текущую activity, чтобы нельзя было вернуться к экрану входа
                         } else {
                             // Ошибка авторизации
                             Toast.makeText(this, "Ошибка авторизации: ${task.exception?.message}", Toast.LENGTH_SHORT).show()
@@ -44,5 +44,6 @@ class SignInActivity : AppCompatActivity() {
                 Toast.makeText(this, "Заполните все поля", Toast.LENGTH_SHORT).show()
             }
         }
+
     }
 }

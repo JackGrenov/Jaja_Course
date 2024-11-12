@@ -14,7 +14,6 @@
         android:layout_height="wrap_content"
         android:background="@color/white">
 
-        <!-- FrameLayout для заголовка -->
         <FrameLayout
             android:id="@+id/user"
             android:layout_width="0dp"
@@ -26,7 +25,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <!-- Текстовое поле (название приложения) -->
             <TextView
                 android:id="@+id/name_app"
                 android:layout_width="wrap_content"
@@ -37,7 +35,6 @@
                 android:textColor="#282727"
                 android:textSize="50sp" />
 
-            <!-- Аватар -->
             <ImageView
                 android:id="@+id/avatar_image_view"
                 android:layout_width="67dp"
@@ -49,10 +46,9 @@
                 android:contentDescription="@string/avatar_image_description"
                 android:focusable="true"
                 android:scaleType="centerCrop"
-                android:onClick="onAvatarClick"/>
+                android:onClick="onAvatarClick" />
         </FrameLayout>
 
-        <!-- Первый курс -->
         <androidx.cardview.widget.CardView
             android:id="@+id/CardView1"
             android:layout_width="0dp"
@@ -62,7 +58,7 @@
             android:layout_marginBottom="25dp"
             android:background="#2E2E2E"
             app:cardCornerRadius="16dp"
-            app:cardElevation="8dp"
+            app:cardElevation="16dp"
             app:layout_constraintBottom_toTopOf="@+id/CardView2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -75,7 +71,10 @@
                 android:layout_height="146dp"
                 android:layout_margin="10dp"
                 android:gravity="center"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="openCourseOOP">
 
                 <ImageView
                     android:id="@+id/imageOOP"
@@ -93,11 +92,9 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="@string/course_one" />
-
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-        <!-- Второй курс -->
         <androidx.cardview.widget.CardView
             android:id="@+id/CardView2"
             android:layout_width="0dp"
@@ -119,7 +116,10 @@
                 android:layout_height="146dp"
                 android:layout_margin="10dp"
                 android:gravity="center"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="openCourseFunctions">
 
                 <ImageView
                     android:id="@+id/imageFunc"
@@ -137,11 +137,10 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="@string/course_two" />
-
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-        <!-- Третий курс -->
+
         <androidx.cardview.widget.CardView
             android:id="@+id/CardView3"
             android:layout_width="0dp"
@@ -163,7 +162,10 @@
                 android:layout_height="146dp"
                 android:layout_margin="10dp"
                 android:gravity="center"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="openCourseLoops">
 
                 <ImageView
                     android:id="@+id/imageKotlin"
@@ -181,11 +183,9 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="@string/course_three" />
-
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-        <!-- Четвертый курс -->
         <androidx.cardview.widget.CardView
             android:id="@+id/CardView4"
             android:layout_width="0dp"
@@ -207,7 +207,10 @@
                 android:layout_height="146dp"
                 android:layout_margin="10dp"
                 android:gravity="center"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="openCourseVariables">
 
                 <ImageView
                     android:id="@+id/imageJava"
@@ -225,11 +228,9 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="@string/course_four" />
-
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-        <!-- Пятый курс -->
         <androidx.cardview.widget.CardView
             android:id="@+id/CardView5"
             android:layout_width="0dp"
@@ -251,7 +252,10 @@
                 android:layout_height="146dp"
                 android:layout_margin="10dp"
                 android:gravity="center"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="openCoursePython">
 
                 <ImageView
                     android:id="@+id/imagePython"
@@ -269,10 +273,7 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="@string/course_five" />
-
             </LinearLayout>
         </androidx.cardview.widget.CardView>
-
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </ScrollView>
